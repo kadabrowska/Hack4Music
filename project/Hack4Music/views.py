@@ -1,18 +1,11 @@
-from rest_framework import generics, permissions
-from rest_framework.response import Response
-from knox.models import AuthToken
-from .serializers import UserSerializer, RegisterSerializer
+from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
+import datetime
+from rest_framework import generics
+from Hack4Music.serializers import ReleaseSerializer
+from Hack4Music.models import Release
 
 
-# Register API
-class RegisterAPI(generics.GenericAPIView):
-    serializer_class = RegisterSerializer
-
-    def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        user = serializer.save()
-        return Response({
-            "user": UserSerializer(user, context=self.get_serializer_context()).data,
-            "token": AuthToken.objects.create(user)[1]
-        })
+class ReleasesListView(generics.ListCreateAPIView):
+    queryset = Release.objects.all()
+    serializer_class = ReleaseSerializer
