@@ -1,6 +1,3 @@
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-import datetime
 from rest_framework import generics
 from Hack4Music.serializers import ReleaseSerializer
 from Hack4Music.models import Release

@@ -25,7 +25,7 @@ router.register('api/releases', ReleaseViewSet, 'releases')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/releases/', ReleasesListView.as_view, name='releases-list'),
+    path('api/releases/', ReleasesListView.as_view(), name='releases-list'),
     path('', include(router.urls))
 ]
 
