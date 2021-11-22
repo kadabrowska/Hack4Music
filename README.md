@@ -5,7 +5,7 @@
 
 <img width="771" alt="Newonce upon a time" src="https://user-images.githubusercontent.com/79336389/142887916-f55980ce-e081-467f-a616-ded003f11e80.png">
 
-## This widget shows all the content added to the page on the same day, but in the previous years.
+## This widget shows all the content added to the page on the same day, but in the previous years. Using the calendar the user can choose the day he/she wants to go back to.
 
 ## Benefits for Newonce:
 ###### - It shows a valuable content that was published in the previous years.
