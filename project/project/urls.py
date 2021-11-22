@@ -14,18 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from rest_framework import routers
-from Hack4Music.api import ReleaseViewSet
-from django.urls import path, include
-from Hack4Music.views import ReleasesListView
-
-router = routers.DefaultRouter()
-router.register('api/releases', ReleaseViewSet, 'releases')
+from django.urls import path
+from Hack4Music.views import ReleasesListView, ArticleListView, VideoListView, PodcastListView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/releases/', ReleasesListView, name='releases-list'),
-    path('', include(router.urls))
+    path('api/releases/', ReleasesListView.as_view(), name='releases-list'),
+    path('api/articles/', ArticleListView.as_view(), name='article-list'),
+    path('api/videos/', VideoListView.as_view(), name='video-list'),
+    path('api/podcasts/', PodcastListView.as_view(), name='podcast-list'),
 ]
 

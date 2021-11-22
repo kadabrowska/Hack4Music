@@ -1,19 +1,24 @@
-from django.db.migrations import serializer
 from rest_framework import generics
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-from Hack4Music.serializers import ReleaseSerializer
-from Hack4Music.models import Release
-from django.http import HttpResponse, JsonResponse
+from Hack4Music.serializers import ReleaseSerializer, ArticleSerializer, VideoSerializer, PodcastSerializer
+from Hack4Music.models import Release, Article, Video, Podcast
 
 
-def ReleasesListView(request, *args, **kwargs):
-    per_page = request.GET.get('per_page')
-
-    queryset = Release.objects.all().order_by('release_date')
+class ReleasesListView(generics.ListCreateAPIView):
+    queryset = Release.objects.all()
     serializer_class = ReleaseSerializer
 
-    serializer = serializer_class(queryset, many=True)
-    return JsonResponse(serializer.data, safe=False)
 
+class ArticleListView(generics.ListCreateAPIView):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
+
+
+class VideoListView(generics.ListCreateAPIView):
+    queryset = Video.objects.all()
+    serializer_class = VideoSerializer
+
+
+class PodcastListView(generics.ListCreateAPIView):
+    queryset = Podcast.objects.all()
+    serializer_class = PodcastSerializer
 
