@@ -1,5 +1,5 @@
 # Newonce upon a time 
-## This is a project created during the hackathon [Hack4Music](https://www.elpassion.com/hack4music). Its aim was to build a functionality or an app using the API provided by Newonce [API](https://newonce-api.herokuapp.com/api).
+## This is a project created during the hackathon [Hack4Music](https://www.elpassion.com/hack4music).  Its aim was to build a functionality or an app using the API provided by Newonce [API](https://newonce-api.herokuapp.com/api).
 
 ## Newonce upon a time is a widget which was placed on the main website's page in the right upper corner. 
 
