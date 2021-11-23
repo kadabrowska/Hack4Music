@@ -1,7 +1,7 @@
 # Newonce upon a time 
-## This is the backend part of the project created during the hackathon [Hack4Music](https://www.elpassion.com/hack4music).  Its aim was to build a functionality or an app using the API provided by Newonce [API](https://newonce-api.herokuapp.com/api).
+## This is the backend REST API part of the project created during the hackathon [Hack4Music](https://www.elpassion.com/hack4music).  Its aim was to build a functionality or an app using the [API](https://newonce-api.herokuapp.com/api) provided by Newonce.
 
-## Newonce upon a time is a widget which was placed on the main website's page in the right upper corner. 
+## Newonce upon a time is a widget which was placed on the main website's page in the right upper corner.
 
 <img width="771" alt="Newonce upon a time" src="https://user-images.githubusercontent.com/79336389/142887916-f55980ce-e081-467f-a616-ded003f11e80.png">
 
@@ -17,7 +17,7 @@
 
 
 
-###### A huge [Thank You](https://tenor.com/view/love-you-love-blow-kiss-hearts-in-love-gif-16591672) to the team "Gorliwe Goryle":
+###### A huge [Thank You](https://tenor.com/view/love-you-love-blow-kiss-hearts-in-love-gif-16591672) to the team "Gorliwe Goryle" for a great cooperation:
 @iawerczuk
 @dybik08
 Kasia G.
